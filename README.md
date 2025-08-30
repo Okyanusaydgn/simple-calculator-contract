@@ -1,28 +1,30 @@
-# Simple Calculator Smart Contract
+# Simple Calculator Contract
 
 ## Project Idea
-The goal of this project is to create a simple on-chain calculator smart contract.  
-Users will be able to perform basic mathematical operations such as addition, subtraction, multiplication, and division.  
-The result of each operation will be stored on-chain and can be retrieved later.
+I want to build a Stacks blockchain project called **"Simple Calculator Contract"**.
 
-## Features
-- Add two numbers
-- Subtract two numbers
-- Multiply two numbers
-- Divide two numbers (with check for division by zero)
-- Store and retrieve the latest result
+## Project Description
+This project is a minimal, beginner-friendly Clarity smart contract that allows users to perform basic arithmetic operations (addition, subtraction, multiplication, division) on-chain.  
+The contract stores the **latest result per user** and exposes read functions so that users can retrieve their last calculation.  
+Division is safe and handles division by zero errors gracefully.  
 
-## Benefits
-- Demonstrates basic smart contract functionality
-- Provides a simple example for mathematical operations on-chain
-- Easy to extend with more functions if needed
+This project will help demonstrate my understanding of:  
+- Clarity smart contract development  
+- Read-only and public functions  
+- Basic error handling  
+- On-chain storage per user  
 
-## Future Improvements
-- Support for multiple users with their own stored results
-- History tracking of past calculations
-- Advanced mathematical operations (square root, power, modulo)
+## Key Features
+- Add, subtract, multiply, and divide two numbers  
+- Store and retrieve the last result for each user  
+- Safe division (division by zero returns an error)  
+- Clear and simple documentation for each function  
 
-## Repository
-This repository will contain:
-- `contracts/` → Smart contract code
-- `README.md` → Project description and documentation
+## Tests (Planned)
+- Unit tests for each arithmetic function  
+- Edge cases (division by zero, negative numbers, large values)  
+- Multiple users storing separate results  
+
+## Security Considerations
+- Prevent division by zero  
+- Notes on integer bounds and gas usage  
